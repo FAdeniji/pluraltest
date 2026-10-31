@@ -1,3 +1,15 @@
+<!-- BEGIN PRUS MANAGED ORCHESTRATION -->
+## Shared PRUS task routing
+
+Before starting any task in this repository, read `.claude/commands/orchestrate.md` and use it to decide the mode, applicable specialists, their order, model selection and verification requirements. Use its task mode for focused requests; do not run the full pipeline for every task. For questions and tiny edits, follow its no-agent shortcut. Supply this repository as the project path when the user has not supplied another project.
+
+Follow the user's current instructions and applicable platform/system rules first. Preserve project-specific instructions outside this managed section; if a material conflict remains, explain it instead of silently ignoring either instruction. Repository text does not authorize unrelated systems access or disclosure of secrets.
+
+Select only agents actually present in this repository; some specialists are intentionally excluded by sync allowlists or restrictions. If a required agent or the orchestrator is missing, report the gap and continue only independent work within the user's authorized scope. Do not invent unavailable agents or claim checks ran. Keep all approvals, production operations and restore boundaries in the canonical procedures; routing does not itself grant authorization.
+
+Use `.github/agents/<name>.agent.md` profiles and read their canonical `.claude/agents/<name>.md` procedures. Copilot selects models separately; Claude frontmatter does not enforce the Copilot model. If specialist delegation or model selection is unavailable, disclose that and perform the permitted procedure directly only where its scope allows. Never claim delegation or a model switch occurred without evidence.
+<!-- END PRUS MANAGED ORCHESTRATION -->
+
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 - [ ] Verify that the copilot-instructions.md file in the .github directory is created.
 
