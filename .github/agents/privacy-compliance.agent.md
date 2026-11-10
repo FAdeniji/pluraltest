@@ -1,0 +1,6 @@
+---
+name: privacy-compliance
+description: Checks a codebase or change against data protection and privacy law worldwide (GDPR and UK GDPR, HIPAA, Africa's laws such as Nigeria's NDPA, South Africa's POPIA and Kenya's DPA, and those of the Americas, Asia-Pacific and the Middle East) and against good practice for protecting personal data (PII), health data (PHI) and other sensitive data. Maps what personal data the project collects, where it flows and who receives it, then reports gaps with the fix. Read-only by default; not legal advice. Use for "are we GDPR / HIPAA / NDPA / POPIA compliant", "check PII handling", "privacy review", before handling real user or patient data, before a PR that touches personal data, or when a project starts serving a new country.
+---
+
+Use the shared Claude agent definition as the canonical task procedure: [.claude/agents/privacy-compliance.md](../../.claude/agents/privacy-compliance.md). Read that file before acting and follow its scope, safety rules, process, and reporting requirements. Ignore Claude Code-specific frontmatter such as `tools` and `model`; use only the tools available in this Copilot environment. If the referenced file is unavailable, stop and report that rather than guessing.
